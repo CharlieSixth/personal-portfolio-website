@@ -1,0 +1,123 @@
+/* Ogólny styl – rockowy vibe */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1c1c1c, #3a3a3a);
+    color: #f0f0f0;
+}
+
+/* Nagłówek */
+header {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #c62828;
+}
+
+header h1 {
+    margin: 0;
+    color: #ff4444;
+}
+
+/* Nawigacja */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #ffa726;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd54f;
+}
+
+/* Przyciski */
+button {
+    background-color: #ffa726;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ffd54f;
+}
+
+/* Sekcje główne */
+main {
+    padding: 30px;
+    background-color: #2a2a2a;
+}
+
+main section, main article {
+    margin-bottom: 20px;
+    padding: 15px;
+}
+
+main a {
+    color: #ffa726;
+    text-decoration: underline;
+}
+
+/* Cytat */
+blockquote {
+    font-style: italic;
+    color: #90caf9;
+    border-left: 5px solid #42a5f5;
+    padding-left: 15px;
+    margin-left: 0;
+}
+
+/* Kody */
+pre, code {
+    background-color: #000;
+    color: #76ff03;
+    padding: 10px;
+    display: block;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Stopka */
+footer {
+    background-color: #111;
+    color: #bbb;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #c62828;
+}
+
+/* Przyciski przewijania do góry */
+#scrollToTop {
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 5px;
+    display: none;
+}
+
+#scrollToTop:hover {
+    background-color: #c62828;
+}

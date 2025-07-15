@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Skontaktuj się ze mną</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona startowa</a></li>
+            <li><a href="artykuly.html">Artykuły</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Dane kontaktowe</h2>
+        <address>
+            Karol<br>
+            ul. Metalowa 66<br>
+            00-666 Gitarowo<br>
+            E-mail: <a href="mailto:karol@example.com">karol@example.com</a><br>
+            Telefon: +48 123 456 789
+        </address>
+    </section>
+    <section>
+        <h2>Wiadomość dla Ciebie</h2>
+        <p>
+            Jeśli chcesz porozmawiać o programowaniu, gitarach, muzyce lub współpracy – napisz śmiało! \m/
+        </p>
+    </section>
+    <button id="scrollToTop" onclick="scrollToTop()">Przewiń do góry</button>
+</main>
+<footer>
+    <p>&copy; 2025 Karol – kontakt mile widziany</p>
+</footer>
+<script>
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+
+    window.onscroll = function() {
+        const button = document.getElementById('scrollToTop');
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
+        }
+    };
+</script>
+</body>
+</html>
+
+

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>O mnie – Karol</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Karol – Rockujący Programista</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Strona startowa</a></li>
+            <li><a href="artykuly.html">Artykuły</a></li>
+            <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>O autorze</h2>
+        <p>
+            Nazywam się Karol. Jestem gitarzystą amatorem, fanem ciężkich riffów i programistą z pasji.
+            Inspiruję się Jamesem Hetfieldem – nie tylko jako muzykiem, ale jako człowiekiem z charakterem i autentycznym podejściem do życia.
+        </p>
+    </section>
+    <section>
+        <h2>Moje zainteresowania</h2>
+        <ul>
+            <li>Gra na gitarze elektrycznej</li>
+            <li>Szeroko pojęty heavy metal</li>
+            <li>Komponowanie riffów</li>
+            <li>Programowanie</li>
+            <li>Cyberpunkowe anime</li>
+        </ul>
+    </section>
+    <section>
+        <h2>Inspirujący cytat</h2>
+        <blockquote cite="https://genius.com/Metallica-seek-and-destroy-lyrics">
+            "We're scanning the scene in the city tonight<br>
+            We're looking for you to start up a fight"<br>
+            – Metallica, „Seek & Destroy”
+        </blockquote>
+    </section>
+    <button id="scrollToTop" onclick="scrollToTop()">Przewiń do góry</button>
+</main>
+<footer>
+    <p>&copy; 2025 Karol – z pasją do riffów i kodu \m/</p>
+</footer>
+<script>
+    // Funkcja do przewinięcia na górę strony
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Pokazywanie/ukrywanie przycisku przewijania w zależności od pozycji na stronie
+    window.onscroll = function() {
+        const button = document.getElementById('scrollToTop');
+        if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+            button.style.display = 'block';
+        } else {
+            button.style.display = 'none';
+        }
+    };
+</script>
+</body>
+</html>
+
